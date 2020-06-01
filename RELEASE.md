@@ -15,10 +15,9 @@
           A defect was filed with Apple. The BluetoothStylusSdk helps fix this behavior, but is ineffective when the pen is perpendicular to the iPad.
       
 ### 2.2.1 - 17 January 2019
+    - Initial public release.
     - Add Support for iPad Pro 12.9 (3nd gen), iPad Pro 11, iPhone XS,
     - iPhone XS Max, and iPhone XR
     - Fixed Defect: removed the dialog to "install the Wacom Stylus Update.app" as this app is no longer available at the App Store.
 
-### 1.0 - date (e.g. 17 Jan 2019)
-    - Initial public release.
-  
+ 
