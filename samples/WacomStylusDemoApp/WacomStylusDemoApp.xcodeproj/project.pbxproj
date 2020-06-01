@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140672BD17AAD13A008B288D /* WacomDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140672BC17AAD13A008B288D /* WacomDevice.framework */; };
+		142AE30D16F1170100A20FC9 /* DiscoveryPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142AE30C16F1170100A20FC9 /* DiscoveryPopoverViewController.m */; };
+		142AE4BE16F13B5400A20FC9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142AE4BD16F13B5400A20FC9 /* CoreBluetooth.framework */; };
+		14362ADB16FB6EC10003CFD3 /* touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 14362ADA16FB6EC10003CFD3 /* touch.png */; };
+		14362ADD16FB6F6C0003CFD3 /* WacomLogoText.png in Resources */ = {isa = PBXBuildFile; fileRef = 14362ADC16FB6F6C0003CFD3 /* WacomLogoText.png */; };
+		1498079416EFAC4900B9B79F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1498079316EFAC4900B9B79F /* UIKit.framework */; };
+		1498079616EFAC4900B9B79F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1498079516EFAC4900B9B79F /* Foundation.framework */; };
+		1498079816EFAC4900B9B79F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1498079716EFAC4900B9B79F /* CoreGraphics.framework */; };
+		1498079E16EFAC4900B9B79F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1498079C16EFAC4900B9B79F /* InfoPlist.strings */; };
+		149807A016EFAC4900B9B79F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498079F16EFAC4900B9B79F /* main.m */; };
+		149807A416EFAC4900B9B79F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 149807A316EFAC4900B9B79F /* AppDelegate.m */; };
+		149807A616EFAC4900B9B79F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 149807A516EFAC4900B9B79F /* Default.png */; };
+		149807A816EFAC4900B9B79F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 149807A716EFAC4900B9B79F /* Default@2x.png */; };
+		149807AA16EFAC4900B9B79F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 149807A916EFAC4900B9B79F /* Default-568h@2x.png */; };
+		149807B016EFAC4900B9B79F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149807AE16EFAC4900B9B79F /* MainStoryboard_iPad.storyboard */; };
+		149807B316EFAC4900B9B79F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149807B216EFAC4900B9B79F /* ViewController.m */; };
+		149807BA16EFB21E00B9B79F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149807B916EFB21E00B9B79F /* GLKit.framework */; };
+		149807BD16EFBFF100B9B79F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149807BC16EFBFF100B9B79F /* QuartzCore.framework */; };
+		149807C216EFC23600B9B79F /* drawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 149807C116EFC23600B9B79F /* drawingView.m */; };
+		149807C416EFC4A500B9B79F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149807C316EFC4A500B9B79F /* OpenGLES.framework */; };
+		149807C616EFD4BD00B9B79F /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 149807C516EFD4BD00B9B79F /* pen.png */; };
+		14B37185174427E000799CDC /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B37184174427E000799CDC /* Particle.png */; };
+		49F19E261ADC2F23005FCD2E /* HandPositionLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F19E201ADC2F23005FCD2E /* HandPositionLeft.png */; };
+		49F19E271ADC2F23005FCD2E /* HandPositionLeftDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F19E211ADC2F23005FCD2E /* HandPositionLeftDown.png */; };
+		49F19E281ADC2F23005FCD2E /* HandPositionLeftUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F19E221ADC2F23005FCD2E /* HandPositionLeftUp.png */; };
+		49F19E291ADC2F23005FCD2E /* HandPositionRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F19E231ADC2F23005FCD2E /* HandPositionRight.png */; };
+		49F19E2A1ADC2F23005FCD2E /* HandPositionRightDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F19E241ADC2F23005FCD2E /* HandPositionRightDown.png */; };
+		49F19E2B1ADC2F23005FCD2E /* HandPositionRightUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F19E251ADC2F23005FCD2E /* HandPositionRightUp.png */; };
+		AD49E0291A317654004C14E8 /* WacomStylusFrameworkResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD49E0281A317654004C14E8 /* WacomStylusFrameworkResources.bundle */; };
+		C715F4D21A17017800918C70 /* HandPositionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C715F4D11A17017800918C70 /* HandPositionTableViewController.m */; };
+		DB524E221B6199C2000B2C00 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB524E211B6199C2000B2C00 /* Launch Screen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		140672BC17AAD13A008B288D /* WacomDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WacomDevice.framework; path = ../SDK/WacomDevice.framework; sourceTree = "<group>"; };
+		142AE30B16F1170100A20FC9 /* DiscoveryPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryPopoverViewController.h; sourceTree = "<group>"; };
+		142AE30C16F1170100A20FC9 /* DiscoveryPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryPopoverViewController.m; sourceTree = "<group>"; };
+		142AE4BD16F13B5400A20FC9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		14362ADA16FB6EC10003CFD3 /* touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touch.png; sourceTree = "<group>"; };
+		14362ADC16FB6F6C0003CFD3 /* WacomLogoText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WacomLogoText.png; sourceTree = "<group>"; };
+		1498079016EFAC4900B9B79F /* WacomStylusDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WacomStylusDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1498079316EFAC4900B9B79F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1498079516EFAC4900B9B79F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1498079716EFAC4900B9B79F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1498079B16EFAC4900B9B79F /* WacomStylusDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WacomStylusDemoApp-Info.plist"; sourceTree = "<group>"; };
+		1498079D16EFAC4900B9B79F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1498079F16EFAC4900B9B79F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		149807A116EFAC4900B9B79F /* WacomStylusDemoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WacomStylusDemoApp-Prefix.pch"; sourceTree = "<group>"; };
+		149807A216EFAC4900B9B79F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		149807A316EFAC4900B9B79F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		149807A516EFAC4900B9B79F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		149807A716EFAC4900B9B79F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		149807A916EFAC4900B9B79F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		149807AF16EFAC4900B9B79F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		149807B116EFAC4900B9B79F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		149807B216EFAC4900B9B79F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		149807B916EFB21E00B9B79F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		149807BC16EFBFF100B9B79F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		149807C016EFC23600B9B79F /* drawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawingView.h; sourceTree = "<group>"; };
+		149807C116EFC23600B9B79F /* drawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawingView.m; sourceTree = "<group>"; };
+		149807C316EFC4A500B9B79F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		149807C516EFD4BD00B9B79F /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
+		14B37184174427E000799CDC /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
+		49F19E201ADC2F23005FCD2E /* HandPositionLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HandPositionLeft.png; sourceTree = "<group>"; };
+		49F19E211ADC2F23005FCD2E /* HandPositionLeftDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HandPositionLeftDown.png; sourceTree = "<group>"; };
+		49F19E221ADC2F23005FCD2E /* HandPositionLeftUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HandPositionLeftUp.png; sourceTree = "<group>"; };
+		49F19E231ADC2F23005FCD2E /* HandPositionRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HandPositionRight.png; sourceTree = "<group>"; };
+		49F19E241ADC2F23005FCD2E /* HandPositionRightDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HandPositionRightDown.png; sourceTree = "<group>"; };
+		49F19E251ADC2F23005FCD2E /* HandPositionRightUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HandPositionRightUp.png; sourceTree = "<group>"; };
+		AD49E0281A317654004C14E8 /* WacomStylusFrameworkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = WacomStylusFrameworkResources.bundle; path = ../../SDK/WacomStylusFrameworkResources.bundle; sourceTree = "<group>"; };
+		C715F4D01A17017800918C70 /* HandPositionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandPositionTableViewController.h; sourceTree = "<group>"; };
+		C715F4D11A17017800918C70 /* HandPositionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandPositionTableViewController.m; sourceTree = "<group>"; };
+		DB524E211B6199C2000B2C00 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		F00E70D11A31D2D000FBEF87 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70D21A31D2D000FBEF87 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70D31A31D2D300FBEF87 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70D41A31D2D300FBEF87 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70D51A31D2D700FBEF87 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70D61A31D2D700FBEF87 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70D71A31D2E300FBEF87 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
+		F00E70D81A31D2E300FBEF87 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F00E70D91A31D2E600FBEF87 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hant"; path = "zh-Hant.lproj/MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
+		F00E70DA1A31D2E600FBEF87 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F00E70DB1A31D2EB00FBEF87 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70DC1A31D2EB00FBEF87 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70DD1A31D2F000FBEF87 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70DE1A31D2F000FBEF87 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70DF1A31D2F300FBEF87 /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = nl; path = nl.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70E01A31D2F300FBEF87 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70E11A31D2F900FBEF87 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70E21A31D2F900FBEF87 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70E31A31D31000FBEF87 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ko; path = ko.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70E41A31D31000FBEF87 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70E51A31D32300FBEF87 /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pl; path = pl.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70E61A31D32300FBEF87 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00E70E71A31D34900FBEF87 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F00E70E81A31D34900FBEF87 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1498078D16EFAC4900B9B79F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1498079416EFAC4900B9B79F /* UIKit.framework in Frameworks */,
+				1498079616EFAC4900B9B79F /* Foundation.framework in Frameworks */,
+				1498079816EFAC4900B9B79F /* CoreGraphics.framework in Frameworks */,
+				149807BA16EFB21E00B9B79F /* GLKit.framework in Frameworks */,
+				149807BD16EFBFF100B9B79F /* QuartzCore.framework in Frameworks */,
+				149807C416EFC4A500B9B79F /* OpenGLES.framework in Frameworks */,
+				142AE4BE16F13B5400A20FC9 /* CoreBluetooth.framework in Frameworks */,
+				140672BD17AAD13A008B288D /* WacomDevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1498078716EFAC4900B9B79F = {
+			isa = PBXGroup;
+			children = (
+				DB524E211B6199C2000B2C00 /* Launch Screen.xib */,
+				1498079916EFAC4900B9B79F /* WacomStylusDemoApp */,
+				1498079216EFAC4900B9B79F /* Frameworks */,
+				1498079116EFAC4900B9B79F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1498079116EFAC4900B9B79F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1498079016EFAC4900B9B79F /* WacomStylusDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1498079216EFAC4900B9B79F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140672BC17AAD13A008B288D /* WacomDevice.framework */,
+				142AE4BD16F13B5400A20FC9 /* CoreBluetooth.framework */,
+				149807C316EFC4A500B9B79F /* OpenGLES.framework */,
+				149807BC16EFBFF100B9B79F /* QuartzCore.framework */,
+				149807B916EFB21E00B9B79F /* GLKit.framework */,
+				1498079316EFAC4900B9B79F /* UIKit.framework */,
+				1498079516EFAC4900B9B79F /* Foundation.framework */,
+				1498079716EFAC4900B9B79F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1498079916EFAC4900B9B79F /* WacomStylusDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				149807A216EFAC4900B9B79F /* AppDelegate.h */,
+				149807A316EFAC4900B9B79F /* AppDelegate.m */,
+				142AE30B16F1170100A20FC9 /* DiscoveryPopoverViewController.h */,
+				142AE30C16F1170100A20FC9 /* DiscoveryPopoverViewController.m */,
+				C715F4D01A17017800918C70 /* HandPositionTableViewController.h */,
+				C715F4D11A17017800918C70 /* HandPositionTableViewController.m */,
+				149807C016EFC23600B9B79F /* drawingView.h */,
+				149807C116EFC23600B9B79F /* drawingView.m */,
+				149807B116EFAC4900B9B79F /* ViewController.h */,
+				149807B216EFAC4900B9B79F /* ViewController.m */,
+				1498079A16EFAC4900B9B79F /* Supporting Files */,
+			);
+			path = WacomStylusDemoApp;
+			sourceTree = "<group>";
+		};
+		1498079A16EFAC4900B9B79F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD49E0281A317654004C14E8 /* WacomStylusFrameworkResources.bundle */,
+				149807AE16EFAC4900B9B79F /* MainStoryboard_iPad.storyboard */,
+				14B37184174427E000799CDC /* Particle.png */,
+				1498079B16EFAC4900B9B79F /* WacomStylusDemoApp-Info.plist */,
+				1498079C16EFAC4900B9B79F /* InfoPlist.strings */,
+				1498079F16EFAC4900B9B79F /* main.m */,
+				14362ADC16FB6F6C0003CFD3 /* WacomLogoText.png */,
+				149807C516EFD4BD00B9B79F /* pen.png */,
+				14362ADA16FB6EC10003CFD3 /* touch.png */,
+				149807A116EFAC4900B9B79F /* WacomStylusDemoApp-Prefix.pch */,
+				49F19E201ADC2F23005FCD2E /* HandPositionLeft.png */,
+				49F19E211ADC2F23005FCD2E /* HandPositionLeftDown.png */,
+				49F19E221ADC2F23005FCD2E /* HandPositionLeftUp.png */,
+				49F19E231ADC2F23005FCD2E /* HandPositionRight.png */,
+				49F19E241ADC2F23005FCD2E /* HandPositionRightDown.png */,
+				49F19E251ADC2F23005FCD2E /* HandPositionRightUp.png */,
+				149807A516EFAC4900B9B79F /* Default.png */,
+				149807A716EFAC4900B9B79F /* Default@2x.png */,
+				149807A916EFAC4900B9B79F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1498078F16EFAC4900B9B79F /* WacomStylusDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 149807B616EFAC4900B9B79F /* Build configuration list for PBXNativeTarget "WacomStylusDemoApp" */;
+			buildPhases = (
+				1498078C16EFAC4900B9B79F /* Sources */,
+				1498078D16EFAC4900B9B79F /* Frameworks */,
+				1498078E16EFAC4900B9B79F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WacomStylusDemoApp;
+			productName = WacomStylusDemoApp;
+			productReference = 1498079016EFAC4900B9B79F /* WacomStylusDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1498078816EFAC4900B9B79F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Wacom;
+				TargetAttributes = {
+					1498078F16EFAC4900B9B79F = {
+						DevelopmentTeam = EG27766DY7;
+					};
+				};
+			};
+			buildConfigurationList = 1498078B16EFAC4900B9B79F /* Build configuration list for PBXProject "WacomStylusDemoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				fr,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+				es,
+				it,
+				nl,
+				pt,
+				ko,
+				pl,
+				ru,
+			);
+			mainGroup = 1498078716EFAC4900B9B79F;
+			productRefGroup = 1498079116EFAC4900B9B79F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1498078F16EFAC4900B9B79F /* WacomStylusDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1498078E16EFAC4900B9B79F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F19E261ADC2F23005FCD2E /* HandPositionLeft.png in Resources */,
+				1498079E16EFAC4900B9B79F /* InfoPlist.strings in Resources */,
+				49F19E271ADC2F23005FCD2E /* HandPositionLeftDown.png in Resources */,
+				149807A616EFAC4900B9B79F /* Default.png in Resources */,
+				AD49E0291A317654004C14E8 /* WacomStylusFrameworkResources.bundle in Resources */,
+				149807A816EFAC4900B9B79F /* Default@2x.png in Resources */,
+				49F19E291ADC2F23005FCD2E /* HandPositionRight.png in Resources */,
+				149807AA16EFAC4900B9B79F /* Default-568h@2x.png in Resources */,
+				49F19E281ADC2F23005FCD2E /* HandPositionLeftUp.png in Resources */,
+				DB524E221B6199C2000B2C00 /* Launch Screen.xib in Resources */,
+				149807B016EFAC4900B9B79F /* MainStoryboard_iPad.storyboard in Resources */,
+				49F19E2A1ADC2F23005FCD2E /* HandPositionRightDown.png in Resources */,
+				149807C616EFD4BD00B9B79F /* pen.png in Resources */,
+				14362ADB16FB6EC10003CFD3 /* touch.png in Resources */,
+				49F19E2B1ADC2F23005FCD2E /* HandPositionRightUp.png in Resources */,
+				14362ADD16FB6F6C0003CFD3 /* WacomLogoText.png in Resources */,
+				14B37185174427E000799CDC /* Particle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1498078C16EFAC4900B9B79F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149807A016EFAC4900B9B79F /* main.m in Sources */,
+				149807A416EFAC4900B9B79F /* AppDelegate.m in Sources */,
+				149807B316EFAC4900B9B79F /* ViewController.m in Sources */,
+				149807C216EFC23600B9B79F /* drawingView.m in Sources */,
+				142AE30D16F1170100A20FC9 /* DiscoveryPopoverViewController.m in Sources */,
+				C715F4D21A17017800918C70 /* HandPositionTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1498079C16EFAC4900B9B79F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1498079D16EFAC4900B9B79F /* en */,
+				F00E70D21A31D2D000FBEF87 /* de */,
+				F00E70D41A31D2D300FBEF87 /* fr */,
+				F00E70D61A31D2D700FBEF87 /* ja */,
+				F00E70D81A31D2E300FBEF87 /* zh-Hans */,
+				F00E70DA1A31D2E600FBEF87 /* zh-Hant */,
+				F00E70DC1A31D2EB00FBEF87 /* es */,
+				F00E70DE1A31D2F000FBEF87 /* it */,
+				F00E70E01A31D2F300FBEF87 /* nl */,
+				F00E70E21A31D2F900FBEF87 /* pt */,
+				F00E70E41A31D31000FBEF87 /* ko */,
+				F00E70E61A31D32300FBEF87 /* pl */,
+				F00E70E81A31D34900FBEF87 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		149807AE16EFAC4900B9B79F /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				149807AF16EFAC4900B9B79F /* en */,
+				F00E70D11A31D2D000FBEF87 /* de */,
+				F00E70D31A31D2D300FBEF87 /* fr */,
+				F00E70D51A31D2D700FBEF87 /* ja */,
+				F00E70D71A31D2E300FBEF87 /* zh-Hans */,
+				F00E70D91A31D2E600FBEF87 /* zh-Hant */,
+				F00E70DB1A31D2EB00FBEF87 /* es */,
+				F00E70DD1A31D2F000FBEF87 /* it */,
+				F00E70DF1A31D2F300FBEF87 /* nl */,
+				F00E70E11A31D2F900FBEF87 /* pt */,
+				F00E70E31A31D31000FBEF87 /* ko */,
+				F00E70E51A31D32300FBEF87 /* pl */,
+				F00E70E71A31D34900FBEF87 /* ru */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		149807B416EFAC4900B9B79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		149807B516EFAC4900B9B79F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		149807B716EFAC4900B9B79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WacomStylusDemoApp/WacomStylusDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "WacomStylusDemoApp/WacomStylusDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		149807B816EFAC4900B9B79F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WacomStylusDemoApp/WacomStylusDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "WacomStylusDemoApp/WacomStylusDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1498078B16EFAC4900B9B79F /* Build configuration list for PBXProject "WacomStylusDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149807B416EFAC4900B9B79F /* Debug */,
+				149807B516EFAC4900B9B79F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		149807B616EFAC4900B9B79F /* Build configuration list for PBXNativeTarget "WacomStylusDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149807B716EFAC4900B9B79F /* Debug */,
+				149807B816EFAC4900B9B79F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1498078816EFAC4900B9B79F /* Project object */;
+}
