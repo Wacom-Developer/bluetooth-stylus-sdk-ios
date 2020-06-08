@@ -31,7 +31,7 @@ The overview document describes the SDK. The markdown format (readme.md) contain
 For further samples check Wacom's Developer additional samples, see [https://github.com/Wacom-Developer](https://github.com/Wacom-Developer)
 
 ## Documentation
-For further details on using the SDK see [Wacom Ink Connectivity - Bluetooth SDK](http://will-docs.westeurope.cloudapp.azure.com/) 
+For further details on using the SDK see [Wacom Device Kit - Bluetooth SDK](http://will-docs.westeurope.cloudapp.azure.com/) 
 
 The API Reference is available directly in the downloaded SDK.
 
