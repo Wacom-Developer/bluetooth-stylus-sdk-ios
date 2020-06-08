@@ -1,4 +1,4 @@
-# Wacom Ink Connectivity - Bluetooth Stylus SDK for iOS
+# Wacom Device Kit - Bluetooth Stylus SDK for iOS
 
 ## Introduction
 
