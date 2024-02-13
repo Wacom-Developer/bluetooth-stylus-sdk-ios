@@ -1,5 +1,8 @@
 # Wacom Device Kit - Bluetooth Stylus SDK for iOS
 
+> IMPORTANT NOTE
+> This series of Wacom products is now discontinued and support for them is no longer offered.
+
 ## Introduction
 
 What you can do with the Bluetooth Stylus SDK for iOS:
@@ -31,7 +34,7 @@ The overview document describes the SDK. The markdown format (readme.md) contain
 For further samples check Wacom's Developer additional samples, see [https://github.com/Wacom-Developer](https://github.com/Wacom-Developer)
 
 ## Documentation
-For further details on using the SDK see [Wacom Device Kit - Bluetooth SDK](http://developer-docs.wacom.com/) 
+For further details on using the SDK see [Wacom Device Kit - Bluetooth SDK](https://developer-docs.wacom.com/docs/overview/discontinued-sdks/ms-overview/) 
 
 The API Reference is available directly in the downloaded SDK.
 
